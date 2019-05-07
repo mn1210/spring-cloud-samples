@@ -1,0 +1,31 @@
+server:
+  port: 9100
+spring:
+  application:
+    name: xz-cfg-auto-refresh-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/mn1210/config-repo.git
+          username: xuzhen1210@aliyun.com
+          password: hazelnutxin1210
+                   
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    virtual-host: xztest
+    username: root
+    password: 123456
+    connection-timeout: 10000
+    template:
+      mandatory: true
+#监控      
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"     
+        
+        
+     
