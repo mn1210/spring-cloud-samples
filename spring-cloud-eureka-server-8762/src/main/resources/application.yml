@@ -1,0 +1,4 @@
+spring:
+  application:
+    name: euerka-server-cluster
+  profiles:    active: xz02    
